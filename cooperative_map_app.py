@@ -96,7 +96,7 @@ else:
     for _, row in filtered_df.iterrows():
         popup_content = f"<b>{row['Cooperative Name']}</b><br>"
         if pd.notna(row["Specialty"]):
-            popup_content += f"Specializing in {row['Specialty']}<br>"
+            popup_content += f"Specialty: {row['Specialty']}<br>"
         if pd.notna(row["Social Media"]):
             popup_content += f"<a href='{row['Social Media']}' target='_blank'>Social Media</a>"
 
